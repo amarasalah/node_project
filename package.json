@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce_node-angular-mysql",
+  "version": "1.0.0",
+  "description": "ecommerce project built with nodejs express angular and mysql and flutter",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Salah Amara",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
