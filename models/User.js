@@ -1,3 +1,4 @@
+
 module.exports=(Sequelize,DataTypes)=>{const User = Sequelize.define("User", {
     username: {
       type: DataTypes.STRING,
@@ -16,6 +17,7 @@ module.exports=(Sequelize,DataTypes)=>{const User = Sequelize.define("User", {
     isAdmin: {
       type: DataTypes.BOOLEAN,
       defaultValue: false,
+      allowNull: false
 
     }
   })

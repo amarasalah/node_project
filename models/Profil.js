@@ -1,4 +1,6 @@
-module.exports=(Sequelize,DataTypes)=>{const Profile = Sequelize.define("Profile", {
+const User = require("./User");
+
+module.exports=(Sequelize,DataTypes)=>{const Profil = Sequelize.define("Profil", {
     username: {
       type: DataTypes.STRING,
       references: {
@@ -43,5 +45,10 @@ module.exports=(Sequelize,DataTypes)=>{const Profile = Sequelize.define("Profile
       allowNull: false
     }
   });
- return Profile;
+  Profil.associate=models=>{
+    Profil.belongsTo(models.User,{
+      onDelete:"cascade"
+    })
+  }
+ return Profil;
 }
