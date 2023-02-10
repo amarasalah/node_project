@@ -1,1 +1,1 @@
-Nodejs Ecommerce project with Sequelize and Angular and Flutter
+Nodejs Ecommerce project with MySQL(Sequelize) and Angular and Flutter
